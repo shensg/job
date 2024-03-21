@@ -23,7 +23,7 @@ export content="**${title}**
 构建状态：${1}...${CI_JOB_STATUS}
 [查看流水线详情](${CI_PROJECT_URL}/pipelines/${CI_PIPELINE_ID})"
 export webhook="f8feb224-1234-5678-9000-ef1cd75feb3a"
-python3 notice-feishu.sh $image $content $webhook
+python3 notice-feishu.py $image $content $webhook
 """
 
 import sys
