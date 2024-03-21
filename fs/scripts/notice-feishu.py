@@ -30,7 +30,7 @@ import sys
 import requests
 import json
 
-def notice(image, content, webhook):
+def notice(image, title, content, webhook):
     # 告警信息
     card = json.dumps({
         "config": {
@@ -50,7 +50,15 @@ def notice(image, content, webhook):
                     "content": content,
                     "tag": "lark_md"
                 }
-            }]
+            }
+        ],
+        "header": {
+            "title": {
+                "content": title,
+                "tag": "plain_text"
+            },
+            "template": "red"
+        }
     })
     url = "https://open.feishu.cn/open-apis/bot/v2/hook/" + webhook
     body = json.dumps({"msg_type": "interactive", "card": card})
