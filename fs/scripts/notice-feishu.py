@@ -68,4 +68,4 @@ def notice(image, title, content, webhook):
 
 
 if __name__ == '__main__':
-    notice(image=sys.argv[1], content=sys.argv[2], webhook=sys.argv[3])
+    notice(image=sys.argv[1], title=sys.argv[2], content=sys.argv[3], webhook=sys.argv[4])
