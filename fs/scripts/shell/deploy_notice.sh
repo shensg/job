@@ -49,9 +49,6 @@ for m in $CI_COMMIT_MESSAGE;do
     gitlab_commit_message+=$m
 done
 
-# 获取群组，最终决定发送到哪个群消息
-
-group=$(echo -n "$CI_PROJECT_URL" | awk -F':' '{print $2}' | awk -F'/' '{print $4}')
 
 # 获取构建时长
 now_time=`date --date="${CI_JOB_STARTED_AT}" +'%s'`
