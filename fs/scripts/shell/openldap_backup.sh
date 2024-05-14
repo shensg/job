@@ -5,7 +5,7 @@ _author_='shensg'
 # OpenLDAP备份
 #
 
-set -x
+#set -x
 
 function notice() {
     # 发消息到飞书、钉钉或企业微信的群机器人 #
