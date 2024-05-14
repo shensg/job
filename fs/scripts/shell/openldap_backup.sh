@@ -64,7 +64,7 @@ function notice() {
 #fs-devops-ldap-center
 # 设置通知类型和webhoob。'feishu'表示飞书群机器人,'qywx'表示企业微信群机器人，'dingding'表示钉钉群机器人
 notice_type='feishu'
-webhoob='8e01ef5f-1867-405e-b6a4-62e549570e56'
+webhoob="$1"
 
 # 获取现在时间的时间戮
 now_time=`date +%s`
