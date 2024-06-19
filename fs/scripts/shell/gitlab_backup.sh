@@ -108,4 +108,4 @@ echo "* 备份耗时：$use_time" && msg_access+="备份耗时：$use_time\n"
 notice "$msg_access" "$msg_error" "$webhoob" "$notice_type"
 
 # 保留数据
-find /var/opt/gitlab/git-backups/  -maxdepth 1 -mindepth 1 -type f -ctime +10 -exec rm -f {} \;
+find /var/opt/gitlab/git-backups/  -maxdepth 1 -mindepth 1 -type f -ctime +1 -exec rm -f {} \;
