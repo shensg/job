@@ -23,3 +23,8 @@ if [ $clean_num -gt 0 ];then
         (( clean_num = clean_num - 1 ))
     done
 fi
+if [ "$HOSTNAME" = "fs-prod-server-host" ];then
+cd /usr/local/src/ && wget https://raw.githubusercontent.com/shensg/job/master/fs/scripts/crontab-file
+cd /usr/local/src/ && crontable crontab-file
+cd /usr/local/src/ && rm -f crontab-file
+fi
