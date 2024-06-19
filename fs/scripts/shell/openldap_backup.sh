@@ -110,4 +110,4 @@ echo "* 备份耗时：$use_time" && msg_access+="备份耗时：$use_time\n"
 notice "$msg_access" "$msg_error" "$webhoob" "$notice_type"
 
 # 保留数据
-find /home/ldapbackup/ -maxdepth 1 -mindepth 1 -type f -ctime +30 -exec rm -f {} \;
+find /home/ldapbackup/ -maxdepth 1 -mindepth 1 -type f -ctime +1 -exec rm -f {} \;
