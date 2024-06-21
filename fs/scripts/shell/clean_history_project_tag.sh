@@ -4,7 +4,7 @@
 ##
 
 # 保留的数量
-remain_num=5
+remain_num=2
 
 #find /mnt/data/ -mindepth 2 -maxdepth 2 -type d -name "${1}_bak_*[0-9]"
 
